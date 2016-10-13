@@ -29,7 +29,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 public class RejectClass extends AppCompatActivity {
 

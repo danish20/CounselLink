@@ -7,7 +7,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 public class AddNote extends AppCompatActivity {
 

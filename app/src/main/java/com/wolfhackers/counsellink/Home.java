@@ -22,7 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -57,7 +57,7 @@ public class Home extends AppCompatActivity
         calendar_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Home.class)); //to be changed
+                startActivity(new Intent(getApplicationContext(),CalendarActivity.class)); //to be changed
             }
         });
         add_matters_button.setOnClickListener(new View.OnClickListener() {

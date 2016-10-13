@@ -9,7 +9,7 @@ import android.support.v4.app.NotificationCompat;
 import android.app.Notification;
 import com.wolfhackers.counsellink.ExpandClass;
 import com.wolfhackers.counsellink.RejectClass;
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 
 public class MainActivity extends AppCompatActivity {

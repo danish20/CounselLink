@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp">
+            <EditText android:id="@+id/editEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Enter Event Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Start and End Date"
+            android:id="@+id/btnStartDate"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@color/accent"
+            android:padding="5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_margin="5dp">
+
+        <!-- Password Label -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editRemindBefore"
+            android:hint="Remind before how many days?" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date"
+            android:id="@+id/btnDueDate"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@color/accent"
+            android:padding="5dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/event_types"
+            android:id="@+id/spinEventType"
+            android:hint="Event Type"
+            android:layout_margin="5dp" />
+
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinEventStatus"
+            android:hint="Event Status"
+            android:layout_margin="5dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinEventPriority"
+            android:entries="@array/event_priority"
+            android:hint="Event Priority"
+            android:layout_margin="5dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinEventMatterName"
+            android:hint="Select Matter"
+            android:layout_margin="5dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_margin="5dp"></android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnCreateEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="5dp"
+            android:text="Create Event"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@color/accent" />
+    </LinearLayout>
+</ScrollView>

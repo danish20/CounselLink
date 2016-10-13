@@ -27,4 +27,38 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string-array name="event_types">
+        <item>Milestone</item>
+        <item>Task</item>
+        <item>Meeting</item>
+    </string-array>
+
+    <string-array name="event_status">
+        <item>Not Started</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="event_priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="matters">
+        <item>Wrongful Termination - Homer Simpson</item>
+        <item>Employee Sexual Harassment - Donald Trump</item>
+        <item>Medical Records Request - Hilary Clinton</item>
+        <item>Trademark Filling - Lexis Nexis / Rise Of Code</item>
+        <item>Malpractice - Joe Smith vs Dr. Bob Kelso</item>
+    </string-array>
+
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+    <string name="title_activity_basic">Calendar</string>
+    <string name="title_activity_event_add">Create Event</string>
+
 </resources>

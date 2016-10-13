@@ -5,4 +5,11 @@
     <color name="colorAccent">#d32f2f</color>
     <color name="black">#81000000</color>
     <color name="colorPrimaryDark_1">#000000</color>
+    <color name="event_color_01">#0288D1</color>
+    <color name="event_color_02">#E64A19</color>
+    <color name="event_color_03">#689F38</color>
+    <color name="event_color_04">#ffb552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#d32f2f</color>
 </resources>

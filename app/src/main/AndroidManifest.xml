@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wolfhackers.cousellink">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wolfhackers.counsellink">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -11,8 +12,14 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="CounselLink"
+        tools:replace="android:label"
         android:supportsRtl="true"
+        android:name="com.orm.SugarApp"
         android:theme="@style/AppTheme">
+        <meta-data android:name="DATABASE" android:value="counsel_link.db" />
+        <meta-data android:name="VERSION" android:value="4" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.wolfhackers" />
         <activity android:name=".MainActivity" />
         <activity
             android:name="com.wolfhackers.counsellink.Home"
@@ -48,6 +55,15 @@
             android:name="com.wolfhackers.counsellink.ViewMatter"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name="com.wolfhackers.counsellink.AddNote"></activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/title_activity_basic" >
+        </activity>
+        <activity
+            android:name=".EventAddActivity"
+            android:label="@string/title_activity_event_add" >
+        </activity>
+
     </application>
 
 </manifest>

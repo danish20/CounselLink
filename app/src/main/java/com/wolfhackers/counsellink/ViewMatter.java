@@ -8,7 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.wolfhackers.cousellink.R;
+import com.wolfhackers.counsellink.R;
 
 import java.util.ArrayList;
 
