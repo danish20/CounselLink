@@ -1,7 +1,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -246,6 +247,15 @@
                 android:layout_height="?attr/actionBarSize"
                 android:orientation="horizontal"
                 android:background="#000">
+
+                <ImageView
+                    android:id="@+id/btnExpandNotes"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
                 <TextView
                     android:paddingLeft="20dp"
                     android:layout_width="0dp"
@@ -270,7 +280,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/linearNotes1"
+                android:visibility="gone">
                 <TextView
                     android:paddingLeft="20dp"
                     android:layout_width="match_parent"
@@ -295,7 +307,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/linearNotes2"
+                android:visibility="gone">
                 <TextView
                     android:paddingLeft="20dp"
                     android:layout_width="match_parent"
@@ -320,7 +334,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/linearNotes3"
+                android:visibility="gone">
                 <TextView
                     android:paddingLeft="20dp"
                     android:layout_width="match_parent"
@@ -342,6 +358,198 @@
                     android:layout_marginBottom="8dp"
                     android:text="This is a note. I am trying to write a long text to test the width of note. Yippie! It looks good."
                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:background="#000"
+                android:id="@+id/linearEvents">
+
+                <ImageView
+                    android:id="@+id/btnExpandEvents"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginStart="10dp"
+                    android:text="Events"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_add_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearEvents1"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start: 10/15/2016"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp" />
+
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End: 10/20/2016"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="5dp" />
+                    </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/accent"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Prepare Complaint" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearEvents2"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start: 10/17/2016"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End: 10/29/2016"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/accent"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Meet with Counsel" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearEvents3"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start: 10/23/2016"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End: 11/04/2016"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/accent"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Discovery Deadline" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"></View>
             </LinearLayout>
 
         </LinearLayout>

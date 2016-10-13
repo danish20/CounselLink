@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 
 import com.wolfhackers.counsellink.R;
 
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 
 public class ViewMatter extends AppCompatActivity {
 
+    Boolean expandedEvents = false;
+    Boolean notesExpanded = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -28,6 +31,62 @@ public class ViewMatter extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),AddNote.class));
             }
         });
+
+        findViewById(R.id.btnExpandEvents).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(expandedEvents == false)
+                {
+                    findViewById(R.id.linearEvents1).setVisibility(View.VISIBLE);
+                    findViewById(R.id.linearEvents2).setVisibility(View.VISIBLE);
+                    findViewById(R.id.linearEvents3).setVisibility(View.VISIBLE);
+                    expandedEvents = true;
+                    final ScrollView view  = (ScrollView) findViewById(R.id.scrollView);
+                    view.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            view.fullScroll(ScrollView.FOCUS_DOWN);
+                        }
+                    });
+                }
+                else
+                {
+                    findViewById(R.id.linearEvents1).setVisibility(View.GONE);
+                    findViewById(R.id.linearEvents2).setVisibility(View.GONE);
+                    findViewById(R.id.linearEvents3).setVisibility(View.GONE);
+                    expandedEvents = false;
+                }
+            }
+        });
+
+        findViewById(R.id.btnExpandNotes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(notesExpanded == false)
+                {
+                    findViewById(R.id.linearNotes1).setVisibility(View.VISIBLE);
+                    findViewById(R.id.linearNotes2).setVisibility(View.VISIBLE);
+                    findViewById(R.id.linearNotes3).setVisibility(View.VISIBLE);
+                    final ScrollView view  = (ScrollView) findViewById(R.id.scrollView);
+                    view.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            view.fullScroll(ScrollView.FOCUS_DOWN);
+                        }
+                    });
+                    notesExpanded = true;
+                }
+
+                else
+                {
+                    findViewById(R.id.linearNotes1).setVisibility(View.GONE);
+                    findViewById(R.id.linearNotes2).setVisibility(View.GONE);
+                    findViewById(R.id.linearNotes3).setVisibility(View.GONE);
+                    notesExpanded = false;
+                }
+            }
+        });
+
     }
 
 }
