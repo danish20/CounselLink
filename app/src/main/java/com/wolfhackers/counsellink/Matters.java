@@ -134,14 +134,14 @@ public class Matters extends AppCompatActivity implements NavigationView.OnNavig
         if(flag)
         {
             matters.add(new Matter(
-                    "Medical Record Request - Hillary Clinton",
-                    "Martin & Jones",
-                    "Oct, 05 2016",
-                    "$13000",
-                    "$16000",
+                    "Lawsuite Apple vs Samsung",
+                    "Martin and Jones",
+                    "Oct, 14 2016",
+                    "$10000",
+                    "$11200",
                     "Not-Started",
                     "Harvey Dent",
-                    "dent.harvey@martin&jones.com",
+                    "dent.harvey@mj.com",
                     new ArrayList<Note>()
             ));
         }

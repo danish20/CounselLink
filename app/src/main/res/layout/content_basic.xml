@@ -174,14 +174,10 @@
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold"/>
                 <android.support.design.widget.TextInputLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_margin="5dp"
                     android:layout_marginLeft="20dp">
-
-
-
                     <EditText
                         android:id="@+id/approved_budget"
                         android:layout_width="match_parent"
@@ -192,14 +188,10 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_margin="5dp"
                     android:layout_marginLeft="20dp">
-
-
-
                     <EditText
                         android:id="@+id/actual_budget"
                         android:layout_width="match_parent"
