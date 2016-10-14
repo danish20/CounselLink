@@ -35,9 +35,6 @@ public class Home extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //Test
-        //notifyNow();
-
         home_button=(LinearLayout)findViewById(R.id.home_button_layout);
         matters_button=(LinearLayout)findViewById(R.id.matters_button_layout);
         calendar_button=(LinearLayout)findViewById(R.id.calendar_button_layout);
@@ -77,6 +74,8 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override
@@ -115,7 +114,15 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_add_matter) {
 
-            startActivity(new Intent(getApplicationContext(),AddMatter.class));
+//            startActivity(new Intent(getApplicationContext(),AddMatter.class));
+
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //Test
+            notifyNow();
 
         } else if (id == R.id.nav_view_matters) {
 
@@ -156,12 +163,12 @@ public class Home extends AppCompatActivity
 
         Notification notification = new NotificationCompat.Builder(this)
                 .setCategory(Notification.CATEGORY_PROMO)
-                .setContentTitle("New Matter Received")
+                .setContentTitle("Final Hearing - Homer Simpson")
                 .setSmallIcon(android.R.color.transparent)
                 .setAutoCancel(true)
                 .setPriority(Notification.PRIORITY_HIGH)
-                .addAction(android.R.drawable.ic_menu_view, "Accept", contentIntent)
-                .addAction(android.R.drawable.ic_menu_view, "Reject", contentIntentForReject)
+                .addAction(android.R.drawable.ic_menu_view, "Snooze", contentIntent)
+                .addAction(android.R.drawable.ic_menu_view, "Dismiss", contentIntentForReject)
                 .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000}).build();
 
         NotificationManager notificationManager =
