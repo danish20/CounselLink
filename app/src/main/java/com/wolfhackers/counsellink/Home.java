@@ -122,7 +122,7 @@ public class Home extends AppCompatActivity
                 e.printStackTrace();
             }
             //Test
-            notifyNow();
+//            notifyNow();
 
         } else if (id == R.id.nav_view_matters) {
 
