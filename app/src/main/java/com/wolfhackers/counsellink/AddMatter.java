@@ -41,17 +41,11 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class AddMatter extends AppCompatActivity  {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_matter);
-
-
     }
 
-
 }
-
