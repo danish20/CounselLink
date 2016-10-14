@@ -134,6 +134,62 @@ public class Matters extends AppCompatActivity implements NavigationView.OnNavig
         if(flag)
         {
             matters.add(new Matter(
+                    "Wrongful Termination - Horner Simpson",
+                    "Martin & Jones",
+                    "Oct, 10 2016",
+                    "$13500",
+                    "$15000",
+                    "In-Progress",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+            matters.add(new Matter(
+                    "Employee Sexual Harassment- Donald Trump",
+                    "Martin & Jones",
+                    "Oct, 10 2016",
+                    "$13000",
+                    "$16000",
+                    "Completed",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+
+            matters.add(new Matter(
+                    "Trademark Filing- LexisNexis/ Rise to Code",
+                    "Martin & Jones",
+                    "Oct, 01 2016",
+                    "$22000",
+                    "$28000",
+                    "Completed",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+            matters.add(new Matter(
+                    "Trademark Filing- LexisNexis/ Rise to Code",
+                    "Martin & Jones",
+                    "Oct, 01 2016",
+                    "$22000",
+                    "$28000",
+                    "Completed",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+            matters.add(new Matter(
+                    "Malpractice- Joe Smith vs Dr. Bob Kelso",
+                    "Martin & Jones",
+                    "Sept, 17 2016",
+                    "$17000",
+                    "$20000",
+                    "In-Progress",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+            matters.add(new Matter(
                     "Lawsuite Apple vs Samsung",
                     "Martin and Jones",
                     "Oct, 14 2016",

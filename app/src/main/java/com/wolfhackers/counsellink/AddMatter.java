@@ -59,7 +59,7 @@ public class AddMatter extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Matter Added Successfully", Snackbar.LENGTH_LONG)
-                        .setAction("Action", new OnClickListener() {
+                        .setAction("Ok", new OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 Intent in=new Intent(getApplicationContext(), Matters.class);

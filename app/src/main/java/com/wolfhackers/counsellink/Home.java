@@ -36,7 +36,7 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
 
         //Test
-        notifyNow();
+        //notifyNow();
 
         home_button=(LinearLayout)findViewById(R.id.home_button_layout);
         matters_button=(LinearLayout)findViewById(R.id.matters_button_layout);
