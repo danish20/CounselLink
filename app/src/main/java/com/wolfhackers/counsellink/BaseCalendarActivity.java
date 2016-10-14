@@ -156,7 +156,7 @@ public abstract class BaseCalendarActivity extends AppCompatActivity implements 
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
-        Toast.makeText(this, event.getName()+", start : "+event.getStartTime(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, event.getName(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
