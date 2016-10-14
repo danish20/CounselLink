@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.wolfhackers.counsellink.AddMatter">
     <LinearLayout
         android:id="@+id/footer_layout"
@@ -178,16 +179,15 @@
                     android:layout_height="?attr/actionBarSize"
                     android:hint="Approved Budget"
                     android:maxLines="1"
-                    android:inputType="numberPassword"
                     android:singleLine="true"
-                    android:layout_marginLeft="20dp" />
+                    android:layout_marginLeft="20dp"/>
                 <EditText
                     android:id="@+id/actual_budget"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:hint="Actual Budget"
                     android:maxLines="1"
-                    android:inputType="numberDecimal"
+                    android:inputType="textEmailAddress"
                     android:singleLine="true"
                     android:layout_marginLeft="20dp"/>
 
@@ -219,17 +219,6 @@
             </LinearLayout>
         </ScrollView>
 
-        <Button
-            android:id="@+id/add_matter"
-            style="?android:textAppearanceSmall"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Add Matter"
-            android:textStyle="bold"
-            android:background="@color/colorAccent"
-            android:textColor="#fff"
-            android:layout_marginBottom="?attr/actionBarSize"/>
+
     </RelativeLayout>
 </RelativeLayout>

@@ -170,7 +170,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:gravity="center"
-                            android:text="10"
+                            android:text="02"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -180,7 +180,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.25"
                             android:gravity="center"
-                            android:text="On Going Matters"
+                            android:text="In-Progress Matters"
                             android:textSize="13sp" />
                     </LinearLayout>
                 </FrameLayout>
@@ -221,7 +221,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:gravity="center"
-                            android:text="05"
+                            android:text="01"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -231,7 +231,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.25"
                             android:gravity="center"
-                            android:text="Pending Matters"
+                            android:text="Not Started Matters"
                             android:textSize="13sp" />
                     </LinearLayout>
                 </FrameLayout>
@@ -272,7 +272,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:gravity="center"
-                            android:text="30"
+                            android:text="03"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -418,6 +418,14 @@
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Overdue Events"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

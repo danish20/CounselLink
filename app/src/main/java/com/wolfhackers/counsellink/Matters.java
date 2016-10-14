@@ -129,6 +129,22 @@ public class Matters extends AppCompatActivity implements NavigationView.OnNavig
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matters_home);
+        Intent in=getIntent();
+        flag=in.getBooleanExtra("add",false);
+        if(flag)
+        {
+            matters.add(new Matter(
+                    "Medical Record Request - Hillary Clinton",
+                    "Martin & Jones",
+                    "Oct, 05 2016",
+                    "$13000",
+                    "$16000",
+                    "Not-Started",
+                    "Harvey Dent",
+                    "dent.harvey@martin&jones.com",
+                    new ArrayList<Note>()
+            ));
+        }
         home_button=(LinearLayout)findViewById(R.id.home_button_layout);
         matters_button=(LinearLayout)findViewById(R.id.matters_button_layout);
         calendar_button=(LinearLayout)findViewById(R.id.calendar_button_layout);
@@ -235,8 +251,6 @@ public class Matters extends AppCompatActivity implements NavigationView.OnNavig
 
         @Override
         public int getItemCount() {
-            if(flag)
-                return 1;
             return matters.size();
         }
     }

@@ -23,7 +23,7 @@
     <item
         android:id="@+id/action_ong"
 
-        android:title="On Going Matters"
+        android:title="In-Progress Matters"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_comp"
@@ -33,7 +33,7 @@
     <item
         android:id="@+id/action_pending"
 
-        android:title="Pending Matters"
+        android:title="Not Started Matters"
         app:showAsAction="always" />
 
   </menu>

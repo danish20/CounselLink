@@ -49,6 +49,7 @@
         </activity>
         <activity
             android:name="com.wolfhackers.counsellink.AddMatter"
+            android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/title_activity_add_matter"
             android:windowSoftInputMode="adjustPan"></activity>
         <activity
@@ -64,6 +65,11 @@
             android:label="@string/title_activity_event_add" >
         </activity>
 
+        <activity android:name=".Matters"
+            android:label="Matters"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

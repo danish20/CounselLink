@@ -72,7 +72,9 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
             @Override
             public boolean onQueryTextSubmit(String query)
             {
-                startActivity(new Intent(getApplicationContext(),Matters.class));
+                Intent in=new Intent(getApplicationContext(),Matters.class);
+                in.putExtra("add",false);
+                startActivity(in);
                 return false;
             }
             @Override
