@@ -129,8 +129,8 @@ public class EventAddActivity extends AppCompatActivity implements com.borax12.m
     @SuppressWarnings("deprecation")
     public void setDate(View view) {
         showDialog(999);
-        Toast.makeText(getApplicationContext(), "ca", Toast.LENGTH_SHORT)
-                .show();
+//        Toast.makeText(getApplicationContext(), "ca", Toast.LENGTH_SHORT)
+//                .show();
     }
 
     @Override
@@ -156,7 +156,7 @@ public class EventAddActivity extends AppCompatActivity implements com.borax12.m
 //            String monthString = new DateFormatSymbols().getMonths()[month];
             StringBuilder date = new StringBuilder().append(day).append("/")
                     .append(month).append("/").append(year);
-            Toast.makeText(EventAddActivity.this, "Date Selected: "+date.toString(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(EventAddActivity.this, "Date Selected: "+date.toString(), Toast.LENGTH_SHORT).show();
         }
     };
 
@@ -214,7 +214,7 @@ public class EventAddActivity extends AppCompatActivity implements com.borax12.m
 //        String monthOfYearEndString = new DateFormatSymbols().getMonths()[monthOfYearEnd];
         selectedStartDate = monthOfYear+" "+dayOfMonth+" "+"12:00";
         selectedEndDate = monthOfYearEnd+" "+dayOfMonthEnd+" "+"12:00";
-        Toast.makeText(this, "Date Selected: "+selectedStartDate+" End Date: "+selectedEndDate, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Date Selected: "+selectedStartDate+" End Date: "+selectedEndDate, Toast.LENGTH_SHORT).show();
     }
 
 }
