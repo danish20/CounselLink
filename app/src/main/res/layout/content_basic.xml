@@ -173,23 +173,41 @@
                     android:paddingBottom="10dp"
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold"/>
-                <EditText
-                    android:id="@+id/approved_budget"
+                <android.support.design.widget.TextInputLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:hint="Approved Budget"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:layout_marginLeft="20dp"/>
-                <EditText
-                    android:id="@+id/actual_budget"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="20dp">
+
+
+
+                    <EditText
+                        android:id="@+id/approved_budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:hint="Approved Budget" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:hint="Actual Budget"
-                    android:maxLines="1"
-                    android:inputType="textEmailAddress"
-                    android:singleLine="true"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="20dp">
+
+
+
+                    <EditText
+                        android:id="@+id/actual_budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:hint="Actual Budget"
+                        android:inputType="number"
+                        android:ems="10" />
+                </android.support.design.widget.TextInputLayout>
 
                 <TextView
                     android:layout_width="match_parent"

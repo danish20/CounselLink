@@ -23,47 +23,47 @@ public class CalendarActivity extends BaseCalendarActivity {
         List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
 
 //        CalendarEvent.deleteAll(CalendarEvent.class);
-        Iterator<CalendarEvent> iterator = CalendarEvent.findAll(CalendarEvent.class);
-        CalendarEvent calEvent=null;
-        int i = 0;
-        while(iterator.hasNext())
-        {
-            i++;
-            calEvent = iterator.next();
-            if(calEvent!=null)
-            {
-                WeekViewEvent event = calEvent.toWeekViewEvent();
-                if(event!=null)
-                {
-                    switch(i)
-                    {
-                        case 1 : event.setColor(getResources().getColor(R.color.event_color_01));
-                                break;
-                        case 2: event.setColor(getResources().getColor(R.color.event_color_02));
-                                break;
-                        case 3: event.setColor(getResources().getColor(R.color.event_color_03));
-                                break;
-                        case 4: event.setColor(getResources().getColor(R.color.event_color_04));
-                                break;
-                        default: event.setColor(getResources().getColor(R.color.event_color_01));
-                    }
-                    Calendar startTime = event.getStartTime();
-//                    startTime.set(Calendar.DAY_OF_MONTH, 14);
-                    startTime.set(Calendar.HOUR_OF_DAY, 3);
-                    startTime.set(Calendar.MINUTE, 0);
-                    startTime.set(Calendar.MONTH, newMonth-1);
-                    startTime.set(Calendar.YEAR, newYear);
-                    Calendar endTime = (Calendar) startTime.clone();
-                    endTime.add(Calendar.HOUR_OF_DAY, 5);
-                    event.setStartTime(startTime);
-                    event.setEndTime(endTime);
-                    event.setLocation(null);
-//                    event.setId(15);
-//                    WeekViewEvent event1 = new WeekViewEvent(7, event.getName(),null, startTime, endTime, true);
-                    events.add(event);
-                }
-            }
-        }
+//        Iterator<CalendarEvent> iterator = CalendarEvent.findAll(CalendarEvent.class);
+//        CalendarEvent calEvent=null;
+//        int i = 0;
+//        while(iterator.hasNext())
+//        {
+//            i++;
+//            calEvent = iterator.next();
+//            if(calEvent!=null)
+//            {
+//                WeekViewEvent event = calEvent.toWeekViewEvent();
+//                if(event!=null)
+//                {
+//                    switch(i)
+//                    {
+//                        case 1 : event.setColor(getResources().getColor(R.color.event_color_01));
+//                                break;
+//                        case 2: event.setColor(getResources().getColor(R.color.event_color_02));
+//                                break;
+//                        case 3: event.setColor(getResources().getColor(R.color.event_color_03));
+//                                break;
+//                        case 4: event.setColor(getResources().getColor(R.color.event_color_04));
+//                                break;
+//                        default: event.setColor(getResources().getColor(R.color.event_color_01));
+//                    }
+//                    Calendar startTime = event.getStartTime();
+////                    startTime.set(Calendar.DAY_OF_MONTH, 14);
+//                    startTime.set(Calendar.HOUR_OF_DAY, 3);
+//                    startTime.set(Calendar.MINUTE, 0);
+//                    startTime.set(Calendar.MONTH, newMonth-1);
+//                    startTime.set(Calendar.YEAR, newYear);
+//                    Calendar endTime = (Calendar) startTime.clone();
+//                    endTime.add(Calendar.HOUR_OF_DAY, 5);
+//                    event.setStartTime(startTime);
+//                    event.setEndTime(endTime);
+//                    event.setLocation(null);
+////                    event.setId(15);
+////                    WeekViewEvent event1 = new WeekViewEvent(7, event.getName(),null, startTime, endTime, true);
+//                    events.add(event);
+//                }
+//            }
+//        }
 
         Calendar startTime = Calendar.getInstance();
 //        startTime.set(Calendar.HOUR_OF_DAY, 3);
