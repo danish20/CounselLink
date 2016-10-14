@@ -167,8 +167,8 @@ public class Home extends AppCompatActivity
                 .setSmallIcon(android.R.color.transparent)
                 .setAutoCancel(true)
                 .setPriority(Notification.PRIORITY_HIGH)
-                .addAction(android.R.drawable.ic_menu_view, "Snooze", contentIntent)
-                .addAction(android.R.drawable.ic_menu_view, "Dismiss", contentIntentForReject)
+                .addAction(android.R.drawable.ic_popup_reminder, "Snooze", contentIntent)
+                .addAction(android.R.drawable.ic_notification_clear_all, "Dismiss", contentIntentForReject)
                 .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000}).build();
 
         NotificationManager notificationManager =
