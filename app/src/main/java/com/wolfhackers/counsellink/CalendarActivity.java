@@ -22,7 +22,7 @@ public class CalendarActivity extends BaseCalendarActivity {
         // Populate the week view with some events.
         List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
 
-//        CalendarEvent.deleteAll(CalendarEvent.class);
+        CalendarEvent.deleteAll(CalendarEvent.class);
         Iterator<CalendarEvent> iterator = CalendarEvent.findAll(CalendarEvent.class);
         CalendarEvent calEvent=null;
         int i = 0;
@@ -86,23 +86,24 @@ public class CalendarActivity extends BaseCalendarActivity {
         endTime.set(Calendar.HOUR_OF_DAY, 4);
         endTime.set(Calendar.MINUTE, 30);
         endTime.set(Calendar.MONTH, newMonth-1);
-        event = new WeekViewEvent(10, "Preliminary Hearing", startTime, endTime);
+        event = new WeekViewEvent(10, "Preliminary Hearing - Joe Smith vs Dr. Bob Kelso", startTime, endTime);
         event.setColor(getResources().getColor(R.color.event_color_02));
         events.add(event);
 //
-        startTime = Calendar.getInstance();
-        startTime.set(Calendar.HOUR_OF_DAY, 4);
-        startTime.set(Calendar.MINUTE, 20);
-        startTime.set(Calendar.MONTH, newMonth-1);
-        startTime.set(Calendar.YEAR, newYear);
-        endTime = (Calendar) startTime.clone();
-        endTime.set(Calendar.HOUR_OF_DAY, 5);
-        endTime.set(Calendar.MINUTE, 0);
-        event = new WeekViewEvent(10, "Send Temporary Invoice", startTime, endTime);
-        event.setColor(getResources().getColor(R.color.event_color_03));
-        events.add(event);
+//        startTime = Calendar.getInstance();
+//        startTime.set(Calendar.HOUR_OF_DAY, 4);
+//        startTime.set(Calendar.MINUTE, 20);
+//        startTime.set(Calendar.MONTH, newMonth-1);
+//        startTime.set(Calendar.YEAR, newYear);
+//        endTime = (Calendar) startTime.clone();
+//        endTime.set(Calendar.HOUR_OF_DAY, 5);
+//        endTime.set(Calendar.MINUTE, 0);
+//        event = new WeekViewEvent(10, "Send Temporary Invoice", startTime, endTime);
+//        event.setColor(getResources().getColor(R.color.event_color_03));
+//        events.add(event);
 
         startTime = Calendar.getInstance();
+        startTime.set(Calendar.DAY_OF_MONTH, 15);
         startTime.set(Calendar.HOUR_OF_DAY, 5);
         startTime.set(Calendar.MINUTE, 30);
         startTime.set(Calendar.MONTH, newMonth-1);
@@ -110,32 +111,32 @@ public class CalendarActivity extends BaseCalendarActivity {
         endTime = (Calendar) startTime.clone();
         endTime.add(Calendar.HOUR_OF_DAY, 2);
         endTime.set(Calendar.MONTH, newMonth-1);
-        event = new WeekViewEvent(2, "Send Final Invoice", startTime, endTime);
-        event.setColor(getResources().getColor(R.color.event_color_02));
-        events.add(event);
-//
-        startTime = Calendar.getInstance();
-        startTime.set(Calendar.HOUR_OF_DAY, 5);
-        startTime.set(Calendar.MINUTE, 0);
-        startTime.set(Calendar.MONTH, newMonth-1);
-        startTime.set(Calendar.YEAR, newYear);
-        startTime.add(Calendar.DATE, 1);
-        endTime = (Calendar) startTime.clone();
-        endTime.add(Calendar.HOUR_OF_DAY, 3);
-        endTime.set(Calendar.MONTH, newMonth - 1);
-        event = new WeekViewEvent(3, "Post Hearing Meet", startTime, endTime);
+        event = new WeekViewEvent(2, "Send Final Invoice - Hilary Clinton", startTime, endTime);
         event.setColor(getResources().getColor(R.color.event_color_03));
         events.add(event);
 //
+//        startTime = Calendar.getInstance();
+//        startTime.set(Calendar.HOUR_OF_DAY, 5);
+//        startTime.set(Calendar.MINUTE, 0);
+//        startTime.set(Calendar.MONTH, newMonth-1);
+//        startTime.set(Calendar.YEAR, newYear);
+//        startTime.add(Calendar.DATE, 1);
+//        endTime = (Calendar) startTime.clone();
+//        endTime.add(Calendar.HOUR_OF_DAY, 3);
+//        endTime.set(Calendar.MONTH, newMonth - 1);
+//        event = new WeekViewEvent(3, "Post Hearing Meet", startTime, endTime);
+//        event.setColor(getResources().getColor(R.color.event_color_03));
+//        events.add(event);
+//
         startTime = Calendar.getInstance();
-        startTime.set(Calendar.DAY_OF_MONTH, 15);
+        startTime.set(Calendar.DAY_OF_MONTH, 16);
         startTime.set(Calendar.HOUR_OF_DAY, 3);
         startTime.set(Calendar.MINUTE, 0);
         startTime.set(Calendar.MONTH, newMonth-1);
         startTime.set(Calendar.YEAR, newYear);
         endTime = (Calendar) startTime.clone();
         endTime.add(Calendar.HOUR_OF_DAY, 3);
-        event = new WeekViewEvent(4, "Client Feedback Meeting", startTime, endTime);
+        event = new WeekViewEvent(4, "Client Feedback Meeting - Homer Simpson", startTime, endTime);
         event.setColor(getResources().getColor(R.color.event_color_01));
         events.add(event);
 
@@ -147,20 +148,20 @@ public class CalendarActivity extends BaseCalendarActivity {
         startTime.set(Calendar.YEAR, newYear);
         endTime = (Calendar) startTime.clone();
         endTime.add(Calendar.HOUR_OF_DAY, 3);
-        event = new WeekViewEvent(7, "Final Hearing",null, startTime, endTime, true);
+        event = new WeekViewEvent(7, "Discovery Deadline - Homer Simpson",null, startTime, endTime, true);
         event.setColor(getResources().getColor(R.color.event_color_01));
         events.add(event);
 
         startTime = Calendar.getInstance();
-        startTime.set(Calendar.DAY_OF_MONTH, startTime.getActualMaximum(Calendar.DAY_OF_MONTH));
-        startTime.set(Calendar.HOUR_OF_DAY, 15);
+        startTime.set(Calendar.DAY_OF_MONTH, 13);
+        startTime.set(Calendar.HOUR_OF_DAY, 4);
         startTime.set(Calendar.MINUTE, 0);
         startTime.set(Calendar.MONTH, newMonth-1);
         startTime.set(Calendar.YEAR, newYear);
         endTime = (Calendar) startTime.clone();
         endTime.add(Calendar.HOUR_OF_DAY, 3);
-        event = new WeekViewEvent(5, "Review Meeting", startTime, endTime);
-        event.setColor(getResources().getColor(R.color.event_color_02));
+        event = new WeekViewEvent(5, "Meet with Counsel - Donald Trump", startTime, endTime);
+        event.setColor(getResources().getColor(R.color.event_color_04));
         events.add(event);
 
         return events;
