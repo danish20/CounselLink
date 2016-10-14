@@ -159,7 +159,7 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
         calendar_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Home.class)); //to be changed
+                startActivity(new Intent(getApplicationContext(),CalendarActivity.class)); //to be changed
             }
         });
         add_matters_button.setOnClickListener(new View.OnClickListener() {

@@ -44,12 +44,11 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class AddMatter extends AppCompatActivity  {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.activity_basic);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,10 +68,25 @@ public class AddMatter extends AppCompatActivity  {
                         }).show();
             }
         });
+||||||| merged common ancestors
+        setContentView(R.layout.activity_add_matter);
+
+
+=======
+        setContentView(R.layout.activity_add_matter);
+>>>>>>> df71d9dfdb0f6779300b22c7a72729ac4b914024
     }
 
+<<<<<<< HEAD
 }
 
 
 
 
+||||||| merged common ancestors
+
+}
+
+=======
+}
+>>>>>>> df71d9dfdb0f6779300b22c7a72729ac4b914024
