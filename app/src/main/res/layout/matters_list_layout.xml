@@ -9,7 +9,7 @@
     android:orientation="horizontal"
     android:background="?android:selectableItemBackground"
     android:transitionGroup="false">
-    
+
     <View
         android:id="@+id/avatar"
         android:layout_width="56dp"
@@ -30,7 +30,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
         <TextView
-
+            android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Title"
@@ -38,7 +38,7 @@
             android:layout_weight="0.7"
             />
         <TextView
-
+            android:id="@+id/type"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Type"
@@ -61,6 +61,6 @@
         android:layout_alignParentEnd="true"
         android:text="Lawfirm Name"
         android:textSize="15sp"
-         />
+        />
 
 </RelativeLayout>

@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -20,21 +18,14 @@ import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.wolfhackers.counsellink.R;
 
 import java.util.ArrayList;
 
-public class MattersHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Matters extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     RecyclerView list;
     boolean flag=false;
@@ -72,7 +63,7 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
             @Override
             public boolean onQueryTextSubmit(String query)
             {
-                startActivity(new Intent(getApplicationContext(),Matters.class));
+
                 return false;
             }
             @Override
@@ -121,11 +112,11 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
         } else if (id == R.id.nav_send) {
 
         }
-        else if(id==R.id.nav_logout)
+        else if(id== R.id.nav_logout)
         {
 
         }
-        else if(id==R.id.nav_exit)
+        else if(id== R.id.nav_exit)
         {
             System.exit(0);
         }
@@ -168,28 +159,7 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
         });
         ArrayList<Note> notes=new ArrayList<>();
         notes.add(new Note("Meeting With Client", "Meet client at my office tomorrow at 6PM to discuss the matter."));
-        matters.add(new Matter(
-                "Wrongful Termination - Horner Simpson",
-                "Martin & Jones",
-                "Oct, 10 2016",
-                "$13500",
-                "$15000",
-                "In-Progress",
-                "Harvey Dent",
-                "dent.harvey@martin&jones.com",
-                notes
-        ));
-        matters.add(new Matter(
-                "Employee Sexual Harassment- Donald Trump",
-                "Martin & Jones",
-                "Oct, 10 2016",
-                "$13000",
-                "$16000",
-                "Completed",
-                "Harvey Dent",
-                "dent.harvey@martin&jones.com",
-                notes
-        ));
+
         matters.add(new Matter(
                 "Medical Record Request - Hillary Clinton",
                 "Martin & Jones",
@@ -201,39 +171,7 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
                 "dent.harvey@martin&jones.com",
                 notes
         ));
-        matters.add(new Matter(
-                "Trademark Filing- LexisNexis/ Rise to Code",
-                "Martin & Jones",
-                "Oct, 01 2016",
-                "$22000",
-                "$28000",
-                "Completed",
-                "Harvey Dent",
-                "dent.harvey@martin&jones.com",
-                notes
-        ));
-        matters.add(new Matter(
-                "Trademark Filing- LexisNexis/ Rise to Code",
-                "Martin & Jones",
-                "Oct, 01 2016",
-                "$22000",
-                "$28000",
-                "Completed",
-                "Harvey Dent",
-                "dent.harvey@martin&jones.com",
-                notes
-        ));
-        matters.add(new Matter(
-                "Malpractice- Joe Smith vs Dr. Bob Kelso",
-                "Martin & Jones",
-                "Sept, 17 2016",
-                "$17000",
-                "$20000",
-                "In-Progress",
-                "Harvey Dent",
-                "dent.harvey@martin&jones.com",
-                notes
-        ));
+
         temp=matters;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -275,12 +213,7 @@ public class MattersHome extends AppCompatActivity implements NavigationView.OnN
                 }
             });
             int pos=position;
-            if(flag)
-            {
-                pos=2;
-                flag=false;
 
-            }
 
             if(matters.get(pos).status.equalsIgnoreCase("Completed"))
             {
