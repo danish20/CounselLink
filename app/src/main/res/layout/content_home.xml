@@ -337,7 +337,7 @@
                         android:id="@+id/event1_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Event Title"
+                        android:text="Send Final Invoice - Hilary Clinton"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
@@ -351,13 +351,13 @@
                             android:id="@+id/event1_start_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="October 10, 2016 - " />
+                            android:text="October 15, 2016 - " />
 
                         <TextView
                             android:id="@+id/event1_end_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="October 12, 2016" />
+                            android:text="October 18, 2016" />
 
                     </LinearLayout>
 
@@ -366,7 +366,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Milestone"
+                        android:text="Task"
                         android:textStyle="italic|bold" />
 
                 </LinearLayout>
@@ -389,7 +389,7 @@
                         android:id="@+id/event2_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Event Title"
+                        android:text="Client Feedback Meeting - Homer Simpson"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
@@ -403,13 +403,13 @@
                             android:id="@+id/event2_start_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="October 10, 2016 - " />
+                            android:text="October 16, 2016 - " />
 
                         <TextView
                             android:id="@+id/event2_end_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="October 12, 2016" />
+                            android:text="October 22, 2016" />
 
                     </LinearLayout>
 
@@ -418,7 +418,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Milestone"
+                        android:text="Meeting"
                         android:textStyle="italic|bold" />
 
                 </LinearLayout>
@@ -461,7 +461,7 @@
                                 android:id="@+id/event2_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Event Title"
+                                android:text="Preliminary Hearing - Joe Smith vs Dr. Bob Kelso"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="18sp" />
 
@@ -481,7 +481,7 @@
                                     android:id="@+id/event2_end_date"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="October 12, 2016" />
+                                    android:text="October 14, 2016" />
 
                             </LinearLayout>
 
@@ -513,7 +513,7 @@
                                 android:id="@+id/event2_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Event Title"
+                                android:text="Meet with Counsel"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="18sp" />
 
@@ -533,7 +533,7 @@
                                     android:id="@+id/event2_end_date"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="October 12, 2016" />
+                                    android:text="October 13, 2016" />
 
                             </LinearLayout>
 
@@ -542,7 +542,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="Milestone"
+                                android:text="Meeting"
                                 android:textStyle="italic|bold" />
 
                         </LinearLayout>
