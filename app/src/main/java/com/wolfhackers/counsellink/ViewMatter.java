@@ -48,6 +48,8 @@ public class ViewMatter extends AppCompatActivity {
                             view.fullScroll(ScrollView.FOCUS_DOWN);
                         }
                     });
+                    ImageView iv = (ImageView) findViewById(R.id.btnExpandEvents);
+                    iv.setImageResource(R.drawable.ic_expand_less_black_24dp);
                 }
                 else
                 {
@@ -55,6 +57,8 @@ public class ViewMatter extends AppCompatActivity {
                     findViewById(R.id.linearEvents2).setVisibility(View.GONE);
                     findViewById(R.id.linearEvents3).setVisibility(View.GONE);
                     expandedEvents = false;
+                    ImageView iv = (ImageView) findViewById(R.id.btnExpandEvents);
+                    iv.setImageResource(R.drawable.ic_expand_more_black_24dp);
                 }
             }
         });
@@ -75,6 +79,8 @@ public class ViewMatter extends AppCompatActivity {
                         }
                     });
                     notesExpanded = true;
+                    ImageView iv = (ImageView) findViewById(R.id.btnExpandNotes);
+                    iv.setImageResource(R.drawable.ic_expand_less_black_24dp);
                 }
 
                 else
@@ -83,6 +89,8 @@ public class ViewMatter extends AppCompatActivity {
                     findViewById(R.id.linearNotes2).setVisibility(View.GONE);
                     findViewById(R.id.linearNotes3).setVisibility(View.GONE);
                     notesExpanded = false;
+                    ImageView iv = (ImageView) findViewById(R.id.btnExpandNotes);
+                    iv.setImageResource(R.drawable.ic_expand_more_black_24dp);
                 }
             }
         });
