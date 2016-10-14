@@ -9,33 +9,38 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="CounselLink"
-        tools:replace="android:label"
         android:supportsRtl="true"
-        android:name="com.orm.SugarApp"
-        android:theme="@style/AppTheme">
-        <meta-data android:name="DATABASE" android:value="counsel_link.db" />
-        <meta-data android:name="VERSION" android:value="7" />
-        <meta-data android:name="QUERY_LOG" android:value="true" />
-        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.wolfhackers" />
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="DATABASE"
+            android:value="counsel_link.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="7" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.wolfhackers" />
+
         <activity android:name=".MainActivity" />
         <activity
-            android:name="com.wolfhackers.counsellink.Home"
+            android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name="com.wolfhackers.counsellink.MattersHome"
+            android:name=".MattersHome"
             android:label="@string/title_activity_matters_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.wolfhackers.counsellink.SerachDemo">
+        <activity android:name=".SerachDemo">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -48,27 +53,34 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="com.wolfhackers.counsellink.AddMatter"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".AddMatter"
             android:label="@string/title_activity_add_matter"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.wolfhackers.counsellink.ViewMatter"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name="com.wolfhackers.counsellink.AddNote"></activity>
+            android:name=".ViewMatter"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".AddNote" />
         <activity
             android:name=".CalendarActivity"
-            android:label="@string/title_activity_basic" >
-        </activity>
+            android:label="@string/title_activity_basic"></activity>
         <activity
             android:name=".EventAddActivity"
-            android:label="@string/title_activity_event_add" >
-        </activity>
-
-        <activity android:name=".Matters"
+            android:label="@string/title_activity_event_add"></activity>
+        <activity
+            android:name=".Matters"
             android:label="Matters"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="CounselLink"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
