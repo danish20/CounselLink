@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingEnd="16dp"
+    android:orientation="horizontal"
+    android:background="?android:selectableItemBackground"
+    android:transitionGroup="false">
+    
+    <View
+        android:id="@+id/avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_completed_24dp"
+        />
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Title"
+            android:textSize="20sp"
+            android:layout_weight="0.7"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Type"
+            android:textSize="15sp"
+            android:layout_weight="0.3"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:text="Lawfirm Name"
+        android:textSize="15sp"
+         />
+
+</RelativeLayout>

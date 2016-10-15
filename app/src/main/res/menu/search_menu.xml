@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Filter"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_all"
+                android:title="View All Matters"
+                app:showAsAction="always"/>
+            <!--android:orderInCategory="100"-->
+
+            <item
+                android:id="@+id/action_ong"
+
+                android:title="On Going Matters"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_comp"
+
+                android:title="Completed Matters"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_pending"
+
+                android:title="Pending Matters"
+                app:showAsAction="always" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search_white_24dp"/>
+
+</menu>

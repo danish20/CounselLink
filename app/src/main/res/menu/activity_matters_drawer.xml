@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_prime_24dp"
+            android:title="Home"
+
+            />
+        <item
+            android:id="@+id/nav_add_matter"
+            android:icon="@drawable/ic_matter_add_prime_24dp"
+            android:title="Add Matter" />
+        <item
+            android:id="@+id/nav_view_matters"
+            android:icon="@drawable/ic_matters_prime_24dp"
+            android:title="View All Matters"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/nav_create_event"
+            android:icon="@drawable/ic_add_event_prime_24dp"
+            android:title="Create Event" />
+    </group>
+
+    <item android:title="Feedback">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_prime_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_contact_dev_prime_24dp"
+                android:title="Contact Developer" />
+        </menu>
+    </item>
+    <item android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout_prime_24dp"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_prime_24dp"
+                android:title="Exit Application" />
+        </menu>
+    </item>
+
+</menu>

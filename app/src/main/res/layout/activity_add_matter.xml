@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wolfhackers.counsellink.AddMatter">
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/home_button_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_home_white_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/matters_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/matters_button_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_matters_white_new_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Matters"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/calendar_button_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_calendar_white_new_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Calendar"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_matter_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/add_matter_button_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_matter_add_prime_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Add Matter"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_alignParentTop="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/add_matter_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/matter_title"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    android:hint="Title"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/matter_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:hint="Type"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/lawfirm_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:hint="Lawfirm Name"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Matter Contact"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:textColor="@color/colorAccent"
+    android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/matter_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:hint="Name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/matter_contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:hint="Email"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/add_matter"
+        style="?android:textAppearanceSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Matter"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+</RelativeLayout>
+</RelativeLayout>

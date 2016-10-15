@@ -1,0 +1,351 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="#ccc"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lexis" />
+
+        </FrameLayout>
+
+        <!-- some skeleton approximating text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/matter_title"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="Matter Title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="0.4"
+                    android:text="Matter Type"
+                    android:textAlignment="center"
+                    android:gravity="right|center_vertical" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lawfirm_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Lawfirm Name"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/date_created"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Created On: Oct,20 2016"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"/>
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp">
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_check_black_24dp"/>
+    <TextView
+        android:id="@+id/budget_type"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Approved"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/budget_amount"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="$5000"
+        android:textSize="16sp" />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_attach_money_black_24dp"/>
+            <TextView
+                android:id="@+id/budget_type2"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Actual"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/budget_amount2"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="$6000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matter Status"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/matter_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="90dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="On Going"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matter Contact"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_person_black_24dp"
+                        />
+                    <TextView
+                        android:id="@id/matter_contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:text="Name"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_email_black_24dp"
+                        />
+                    <TextView
+                        android:id="@+id/matter_contact_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:text="abc@abc.com"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:background="#000">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginStart="10dp"
+                    android:text="Notes"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/add_note"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_add_black_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Note1 Title"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/matter_notes1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="36dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="This is a note. I am trying to write a long text to test the width of note. Yippie! It looks good."
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Note2 Title"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/matter_notes2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="36dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="This is a note. I am trying to write a long text to test the width of note. Yippie! It looks good."
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Note3 Title"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/matter_notes3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="36dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="This is a note. I am trying to write a long text to test the width of note. Yippie! It looks good."
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+</ScrollView>
